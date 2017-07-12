@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Библиотека</title>
+
+	<!-- Bootstrap -->
+	<link href="css/lib/bootstrap.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+
+    <![endif]-->
+</head>
+
+<body>
+	<div class="container el-main-container">
+        <nav class="navbar navbar-default">
+            <form class="navbar-form navbar-right el-search-form" role="search">
+                <div class="input-group">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search">
+                    </div>
+                    <!--<div class="input-group-btn">-->
+                        <!--<button class="btn btn-default" type="submit">-->
+                            <!--<i class="glyphicon glyphicon-search"></i>-->
+                        <!--</button>-->
+                    <!--</div>-->
+                </div>
+            </form>
+        </nav>
+		<div class="row">
+			<div class="col-lg-4 col-md-4 col-sm-4">
+				<!--navbar navbar-fixed-left nav navbar-nav-->
+				<!-- <form class="navbar-form pull-left">
+				  	<input type="text" class="span2">
+					</form> -->
+				<form id="books-form">
+					<div class="input-group" id="el-input-group-date">
+						<span class="input-group-addon" data-toggle="tooltip" title="Год выхода тиража"><span class="glyphicon glyphicon-calendar"></span></span>
+						<input type="date" class="form-control" name="input-group-date" required>
+					</div>
+					<br>
+					<div class="input-group" id="el-input-group-title">
+						<span class="input-group-addon" data-toggle="tooltip" title="Название книги"><span class="glyphicon glyphicon-book"></span></span>
+						<input type="text" class="form-control" placeholder="Название" name="input-group-title" required>
+					</div>
+					<br>
+					<div class="input-group" id="el-input-group-author">
+						<span class="input-group-addon" data-toggle="tooltip" title="Имя автора книги"><span class="glyphicon glyphicon-user"></span></span>
+						<input type="text" class="form-control" placeholder="Имя автора" name="input-group-author" required placeholder="Имя автора">
+					</div>
+					<br>
+					<div class="input-group" id="el-input-group-circulation">
+						<span class="input-group-addon" data-toggle="tooltip" title="Тираж"><span class="glyphicon glyphicon-shopping-cart"></span></span>
+						<input type="number" min="1" max="100000" value="100000" class="form-control" name="input-group-circulation" >
+					</div>
+					<br>
+					<div class="input-group" id="el-input-group-isbn">
+						<span class="input-group-addon" data-toggle="tooltip" title="Международный стандартный книжный номер"><span class="glyphicon glyphicon-barcode"></span></span>
+						<input type="text" class="form-control" placeholder="ISBN" name="input-group-isbn" required>
+					</div>
+					<br>
+						<button type="button" class="btn btn-success btn-lg center-block el-button-add">Добавить <span class="glyphicon glyphicon-plus"></span></button>
+						<button type="button" class="btn btn-warning btn-lg center-block el-button-edit" style="display: none">Редактировать <span class="glyphicon glyphicon-pencil"></span></button>
+						<button type="reset" class="btn btn-danger btn-lg center-block el-button-close-edit-mode" style="display: none">Отмена <span class="glyphicon glyphicon-ban-circle"></span></button>
+				</form>
+				<br>
+			</div>
+			<div class="col-lg-8 col-md-8 col-sm-8 el-list-container">
+				<ul class="list-group el-books-list el-sortable">
+				</ul>
+			</div>
+		</div>
+	</div>
+	 <!--jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<!--&lt;!&ndash; Include all compiled plugins (below), or include individual files as needed &ndash;&gt;-->
+	<script src="js/lib/bootstrap.js"></script>
+	<!--<script src="js/script.js"></script>-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+	<script src="js/script.js" charset="utf-8"></script>
+</body>
+
+</html>

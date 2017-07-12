@@ -1,0 +1,63 @@
+body {
+    background: #333;
+}
+
+.el-main-container {
+    margin-top: 30px;
+}
+
+.el-books-list_item {
+    margin-bottom: 10px;
+    transition: .3s all ease;
+}
+
+.el-books-list_item:hover {
+    background-color: #428bca;
+    color: white;
+}
+
+.el-books-list_item:hover {
+    background-color: #428bca;
+    color: white;
+}
+
+.el-danger {
+    background-color: #E0494A !important;
+}
+
+.el-books-list_item_trash-icon {
+    color: white;
+}
+
+input[disabled] {
+    color: #bbb;
+}
+
+.el-button-edit {
+    margin-bottom: 10px;
+}
+
+#books-form > button {
+    width: 200px;
+}
+
+.el-books-list_item.active .el-books-list_item-badge{
+    background-color: red;
+    height: 40px;
+    width: 8px;
+    float: left;
+    position: absolute;
+    left: -8px;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    top: -11px;
+}
+
+.navbar {
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+}
+
+.navbar .el-search-form input{
+    max-width: 250px;
+}
